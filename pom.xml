@@ -94,38 +94,38 @@
 			</plugin>
 
 			<plugin>
-    <groupId>org.jacoco</groupId>
-    <artifactId>jacoco-maven-plugin</artifactId>
-    <version>${jacoco.version}</version>
-    <executions>
-        <execution>
-            <id>jacoco-initialize</id>
-            <goals>
-                <goal>prepare-agent</goal>
-            </goals>
-        </execution>
-        <execution>
-            <id>jacoco-site</id>
-            <phase>package</phase>
-            <goals>
-                <goal>report</goal>
-            </goals>
-        </execution>
-    </executions>
-</plugin>
+                           <groupId>org.jacoco</groupId>
+                           <artifactId>jacoco-maven-plugin</artifactId>
+                           <version>${jacoco.version}</version>
+                           <executions>
+                               <execution>
+                                   <id>jacoco-initialize</id>
+                                   <goals>
+                                       <goal>prepare-agent</goal>
+                                   </goals>
+                               </execution>
+                               <execution>
+                                    <id>jacoco-site</id>
+                                    <phase>package</phase>
+                                    <goals>
+                                        <goal>report</goal>
+                                    </goals>
+                               </execution>
+                           </executions>
+                        </plugin>
 		</plugins>
 	</build>
 
-
-	 <distributionManagement>
-        <repository>
-            <id>maven-releases</id>
-            <url>http://43.205.242.45:8081/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>maven-snapshots</id>
-            <url>http://43.205.242.45:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
+        <distributionManagement>
+           <repository>
+              <id>maven-releases</id>
+              <url>http://192.168.225.51:8081/repository/maven-releases/</url>
+           </repository>
+		
+           <snapshotRepository>
+              <id>maven-snapshots</id>
+              <url>http://192.168.225.51:8081/repository/maven-snapshots/</url>
+           </snapshotRepository>
+        </distributionManagement>
 
 </project>
